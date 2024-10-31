@@ -1,0 +1,10 @@
+SQL Server Installer ==>installation should be completed
+SQL Server Management Studio (SSMS)==>installation should be done 
+
+Post-Installation Verification
+Connect to SQL Server:
+Use SSMS to connect to the server instance.
+Verify Services:
+Check SQL Server and SQL Server Agent services are running in Services.msc.
+Security and Updates:
+Install SQL Server updates from Microsoft Update and configure firewall settings as needed.
