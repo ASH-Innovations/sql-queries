@@ -1,0 +1,30 @@
+Select * from Person.Person;
+
+select 'sri' from Person.Person --will indeed display the string 'sri' in each row of the result, even if 'sri' does not exist in the actual
+                                  --data of the Person.Person table. because we have not selected any column name here
+
+
+select FirstName from Person.Person --all the day which is available in FirstName column will be displayed 
+                                    --note that we need to specify column names with out double quotes
+
+select 5*2  --Literal using select
+
+select [FirstName] ,[lastname] from  Person.Person
+
+select firstname, lastname,middlename from Person.person;
+
+
+select top 200 firstname , lastname from person.Person --> we can get the top 200 recrods 
+
+select top 10 percent firstname from person.Person -->top 10 percent of records we can retrice from total no of records 
+
+select top 1 percent firstname, middlename , lastname from person.Person --> one percent of records we can retrieve from total number of recrods with defined columns 
+
+select * from person.Person -->we can retrieve all the row and column of data by mentioning astersik(*)
+
+select top 100* from person.person -->top 100 records with all coumns 
+
+select top 1 percent * from person.person --> 1 percent of records with all the columns 
+
+
+
