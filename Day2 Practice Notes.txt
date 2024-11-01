@@ -28,3 +28,49 @@ select count (firstname) as personFirstName from person.person--Counts only non-
 
 
 
+select * from person.person
+
+
+select * 
+from Person.Person
+where FirstName= 'wanida' and BusinessEntityID=20 -->WHERE clause with AND operator
+
+select * 
+from person.person
+where firstname='Gail' or FirstName='Gigi' -->WHERE clause with OR operator
+
+select *
+from Person.person
+where FirstName in('gail','gigi')  -->we can use IN Operator instead of writing multiple OR Operators
+
+select * from person.person
+where FirstName='gail' and (PersonType='in' or MiddleName is NULL)-->we can use and / or oeprators togather like this 
+
+
+select * from person.person
+where BusinessEntityID=1  --retrieving the all columns where the BusinessEntityID=1 
+
+
+select businessentityID, firstname, LastName from person.person
+where businessentityID=21 --retreiving the  few columns where the BusinessEntityID=21
+
+select BusinessEntityID,FirstName , lastname 
+from  person.person 
+where BusinessEntityID<20-- retrieving the few columns where the BusinessEntityID<20
+
+select * 
+from person.person
+where BusinessEntityID>20 -->retrieving the all columns where the businessEntityID>20
+
+select *
+from person.person
+where BusinessEntityID<=20
+order by  BusinessEntityID desc-->retrieving the columns in descending order 
+
+
+
+
+
+
+
+
