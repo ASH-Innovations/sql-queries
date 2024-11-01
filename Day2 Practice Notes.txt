@@ -1,0 +1,30 @@
+select * from Person.Person
+
+select firstname as personFirstname, 
+lastname as personLastName,
+MiddleName as personMiddleName --Standard Aliasing with AS Keyword for more readable and temporary only
+from Person.Person
+
+
+select firstName as "personFirstName",
+lastname as "personLastName",
+middleName as "personMiddleName"--Aliasing with double codes "" for more readable and temporary only 
+from Person.Person
+
+
+
+select firstName as [personFirstName],
+lastName as [personLastName],
+middleName as [personMiddleName] --Aliasing with Square Brackets [ ] for more readable and temporary only 
+from person.person       
+
+
+select * from Person.Person
+
+
+select count(*) from Person.Person -- Counting All Rows Including NULL Values
+
+select count (firstname) as personFirstName from person.person--Counts only non-NULL values in the specified column
+
+
+
