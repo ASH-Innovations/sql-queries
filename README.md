@@ -8,4 +8,4 @@ Ideal for QA professionals preparing for SQL-based interview questions, with exa
 ## How to Use
 
 1. **Clone the Repository**:
-   
+   https://github.com/ASH-Innovations/sql-queries.git
