@@ -1,0 +1,52 @@
+--A JOIN clause is used to combine rows from two or more tables, based on a related column between them
+
+CREATE TABLE Departments (
+    DepartmentID INT PRIMARY KEY,
+    DepartmentName NVARCHAR(50) NOT NULL
+);
+
+-- Insert sample data into Departments
+INSERT INTO Departments (DepartmentID, DepartmentName)
+VALUES (1, 'HR'),
+       (2, 'Sales'),
+       (3, 'Engineering'),
+       (4, 'Marketing');
+
+--==========================================================================================================
+	   CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName NVARCHAR(50),
+    LastName NVARCHAR(50),
+    DepartmentID INT, -- Foreign key linking to Departments table
+    Salary DECIMAL(10, 2)
+);
+
+-- Insert sample data into Employees
+INSERT INTO Employees (EmployeeID, FirstName, LastName, DepartmentID, Salary)
+VALUES  (1, 'John', 'Doe', 1, 50000),
+       (2, 'Jane', 'Smith', 2, 60000),
+       (3, 'Robert', 'Brown', 3, 70000),
+       (4, 'Emily', 'Davis', NULL, 55000),  -- Employee with no department
+       (5, 'Michael', 'Johnson', 4, 65000),
+       (6,'rom','tom',5,75000)
+
+--==========================================================================================================
+	 
+	   select FirstName, LastName,DepartmentName--matching records from both tables
+	   from Employees ET
+	   inner join Departments DT on ET.departmentId=DT.departmentId
+
+	   select firstname, lastname, ET.departmentid,departmentName  --all the recrords from left table and matching records from both tables 
+	   from Employees ET
+	   left join Departments DT 
+	   on ET.DepartmentID=dt.DepartmentID
+
+	   select firstname, lastname, et.departmentid,departmentName--all the records from the right table and matching records from both tables
+	   from Employees ET
+	   right join Departments DT
+	   on ET.DepartmentID=DT.DepartmentID
+
+	   select firstname, lastname, departmentName--all records from the both tables
+	   from Departments dt
+	   full outer join Employees et
+	   on et.DepartmentID=dt.DepartmentID
