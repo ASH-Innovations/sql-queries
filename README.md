@@ -76,12 +76,3 @@ To set up and run queries locally:
 * Anyone preparing for **SQL interviews**
 
 ---
-
-## 🧠 Bonus: Practice Datasets
-
-* Sample `EMPLOYEES`, `ORDERS`, `PRODUCTS` tables included
-* Insert scripts to populate data and practice joins, aggregates, subqueries, etc.
-
----
-
-Let me know if you'd like to attach this to a real GitHub README with markdown formatting, or if you want to **add sample `.sql` files** to go with it (e.g., `create_tables.sql`, `joins_examples.sql`, `subqueries.sql`, etc.).
