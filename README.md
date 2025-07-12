@@ -18,9 +18,6 @@ Fundamentals like `SELECT`, `WHERE`, `GROUP BY`, `ORDER BY`, and `JOINS`.
 ✅ **Intermediate & Advanced Queries**
 Subqueries, `CASE`, window functions, `CTE`, `RANK()`, `PARTITION BY`, and performance tips.
 
-✅ **MSSQL-Specific Features**
-T-SQL extensions, error handling (`TRY...CATCH`), `IDENTITY`, `TOP`, `OFFSET-FETCH`, temp tables, and more.
-
 ✅ **Real-Time Scenarios & QA Use Cases**
 Includes queries for validating test data, automation pre-checks, and backend validations.
 
